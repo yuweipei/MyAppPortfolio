@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Customized Button Style-->
     </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -14,4 +16,16 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    android:layout_alignLeft="@id/score_app"
+    android:layout_alignRight="@id/score_app"
+    <style name="AppTheme.NormButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@color/colorNormalButton</item>
+        <item name="android:onClick">openApplication</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignLeft">@id/streamer_app</item>
+        <item name="android:layout_alignRight">@id/streamer_app</item>
+    </style>
 </resources>
